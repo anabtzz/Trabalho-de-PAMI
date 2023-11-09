@@ -29,6 +29,7 @@ Como explicado nos 1.1, o acelerômetro retorna dados tipo float para a força d
 
 SENSORES DE MOVIMENTO:
 
+````
 TYPE_ACCELEROMETER baseado em hardware, utiliza o acelerômetro, retornando a força da aceleração nos 3 eixos incluindo a força da gravidade. Comumente utilizado para detectar movimentos de rotação, giro, inclinação e vibração.
 
 TYPE_GYROSCOPE baseado em hardware, utiliza o giroscópio, retornando a taxa de rotação do dispositivo em rad/s(radiano por segundo, divisão entre o deslocamente do dispositivo pelo raio da circunferência da rotação) nos 3 eixos. Muito utilizado na “navegação por gestos” dos dispositivos em ações como rotacionar o dispositivo para abrir a câmera.
@@ -38,9 +39,10 @@ TYPE_GRAVITY baseado em software ou hardware, utiliza o giroscópio, retornando 
 TYPE_LINEAR_ACCELERATION baseado em software ou hardware, utiliza o acelerômetro, retornando a força da aceleração em um único eixo excluindo a força da gravidade.
 
 TYPE_ROTATION_VECTOR baseado em software ou hardware, utiliza o giroscópio, retornado a rotação do dispositivo nos 3 eixos em forma de vetor.
+````
 
 SENSORES AMBIENTAIS:
-
+````
 TYPE_AMBIENT_TEMPERATURE baseado em hardware, utiliza o termômetro, retornando a temperatura do ambiente em graus Celsius.
 
 TYPE_LIGHT baseado em hardware, utiliza o fotômetro, retornando o nivel d eluz do ambiente em lx(quantidade de luz por metro quadrado), detecta e controla o brilho da tela, utilizado em recursos como “moto noturno” que diminui o brilho a depender da luz ambiente.
@@ -50,15 +52,15 @@ TYPE_PRESSURE baseado em hardware, utiliza o barômetro, retornando a pressão d
 TYPE_RELATIVE_HUMIDITY baseado em hardware, mede a umidade relativa do ar em porcentagem, detecta o ponto de condensação, umidade absoluta e relativa.
 
 TYPE_TEMPERATURE baseado em hardware, utiliza o termômetro, retornando a temperatura da CPU do dispositivo em graus Celsius. Importante ressaltar que esse sensor foi substituído pelo TYPE_AMBIENT_TEMPERATURE no API 14 do Android.
-
+````
 SENSORES DE POSIÇÃO:
-
+````
 TYPE_MAGNETIC_FIELD baseado em hardware, utiliza o sensor de campo geomagnético para medir o campo geomagnético do ambiente nos 3 eixos e criar uma bussola. Retorna o valor em μT(micro-Tesla), unidade de medida utilizada para densidade de fluxo magnético.
 
 TYPE_ORIENTATION baseado em software, mede os graus de rotação nos 3 eixos e determina a posição do dispositivo. Foi depreciado na versão Android 2.2 e o tipo foi descontinuado no Android 4.4. Atualmente, esse sensor pode ser obtido por meio de uma combinação do sensor TYPE_MAGNETIC_FIELD e TYPE_ACCELEROMETER.
 
 TYPE_PROXIMITY baseado em hardware, utiliza o sensor de campo geomagnético, mede a proximidade da tela do dispositivo em comparação a um campo magnético, objeto. Esse sensor é comumente utilizado para detectar se o smartphone está próximo ao ouvido de uma pessoa durante uma ligação e a deligar a tela.
-
+````
 CONCLUSÃO
 
 BIBLIOGRAFIA
