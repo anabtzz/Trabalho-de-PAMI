@@ -61,7 +61,11 @@ TYPE_ORIENTATION baseado em software, mede os graus de rotação nos 3 eixos e d
 
 TYPE_PROXIMITY baseado em hardware, utiliza o sensor de campo geomagnético, mede a proximidade da tela do dispositivo em comparação a um campo magnético, objeto. Esse sensor é comumente utilizado para detectar se o smartphone está próximo ao ouvido de uma pessoa durante uma ligação e a deligar a tela.
 ````
+
 CONCLUSÃO
+Neste trabalho foi apresentado a importância das permissões para utilização dos sensores compatíveis com Android, mas o principal objetivo foi listar e explicar a finalidade de cada tipo de permissão e sensor, além de exemplificar com usos cotidianos que se tornaram tão comuns que podem passar despercebido.
+Outra conclusão essencial que pode ser tirada dessa pesquisa foi o quão útil a criação e utilização desses sensores se tornou para os dispositivos, já que atualmente grande parte das ações que passaram do físico para o digital com o proposito de aumentar a eficiência e facilidade dependem desses sensores. Um grande exemplo disso é o aplicativo Google Maps ou qualquer outro programa que utilize o sensor de campo geomagnético, giroscópio e acelerômetro para determinar a localização, direção e movimentação do dispositivo em comparação ao ambiente, assim podendo guiar o usuário a uma rota especifica baseada na replica digital do mapa real dos lugares. Além da popular “Navegação por Gestos” citada diversas vezes como exemplo prático dos sensores ao decorrer do trabalho, mesmo que existam falhas nessa tecnologia ou ela possa não ser tão útil quanto a localização, é interessante observar a variedade de funcionalidades que os sensores podem desempenhar.
+
 
 BIBLIOGRAFIA
 https://developer.android.com/guide/topics/sensors/sensors_overview?hl=pt-br
