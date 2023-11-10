@@ -61,7 +61,6 @@ TYPE_ORIENTATION baseado em software, mede os graus de rotação nos 3 eixos e d
 
 TYPE_PROXIMITY baseado em hardware, utiliza o sensor de campo geomagnético, mede a proximidade da tela do dispositivo em comparação a um campo magnético, objeto. Esse sensor é comumente utilizado para detectar se o smartphone está próximo ao ouvido de uma pessoa durante uma ligação e a deligar a tela.
 ````
-
 CONCLUSÃO
 
 Neste trabalho foi apresentado a importância das permissões para utilização dos sensores compatíveis com Android, mas o principal objetivo foi listar e explicar a finalidade de cada tipo de permissão e sensor, além de exemplificar com usos cotidianos que se tornaram tão comuns que podem passar despercebido.
