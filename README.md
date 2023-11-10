@@ -9,7 +9,7 @@ Este trabalho, além de ter o objetivo de ressaltar essa importância, também t
 
 Permissões autorizam a aplicaçao a obter dados e informaçoes do usuário, além de permitir que programas tenham acesso a partes especificas do hardware do dispositivo, como sensores que fornecem localização, movimentação, entre outras funcionalidades que serão explicadas ao decorrer do trabalho.
 
-<h3>CATEGORIAS DAS PERMISSOES:</h3>
+<h3>CATEGORIAS DAS PERMISSÕES:</h3>
 
 1.1
 Permissões normais:
