@@ -5,7 +5,7 @@
 As permissões foram criadas para garantir a segurança do usuário e evitar que aplicativos maliciosos tivessem acesso fácil a sensores com potencial de colocar informações pessoais em perigo, a localização, um dos sensores mais utilizados é um ótimo exemplo da razão pelo qual é essencial que existam permissões, já que a facilidade de acesso a uma informação com esse grau de sigilo poderia resultar em diversos problemas.
 Este trabalho, além de ter o objetivo de ressaltar essa importância, também tem a finalidade de apresentar as principais permissões e sensores disponíveis para Android, além dos tipos de retorno para cada sensor e lista das Actions utilizadas para cada permissão.
 
-<h2>OQUE É PERMISSOES?</h2>
+<h2>OQUE É PERMISSÕES?</h2>
 
 Permissões autorizam a aplicaçao a obter dados e informaçoes do usuário, além de permitir que programas tenham acesso a partes especificas do hardware do dispositivo, como sensores que fornecem localização, movimentação, entre outras funcionalidades que serão explicadas ao decorrer do trabalho.
 
