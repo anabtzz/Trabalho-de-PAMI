@@ -5,6 +5,60 @@ INTRODUÇÃO
 As permissões foram criadas para garantir a segurança do usuário e evitar que aplicativos maliciosos tivessem acesso fácil a sensores com potencial de colocar informações pessoais em perigo, a localização, um dos sensores mais utilizados é um ótimo exemplo da razão pelo qual é essencial que existam permissões, já que a facilidade de acesso a uma informação com esse grau de sigilo poderia resultar em diversos problemas.
 Este trabalho, além de ter o objetivo de ressaltar essa importância, também tem a finalidade de apresentar as principais permissões e sensores disponíveis para Android, além dos tipos de retorno para cada sensor e lista das Actions utilizadas para cada permissão.
 
+OQUE É PERMISSOES?
+
+Permissoes autorizam a aplicaçao a obter dados e informaçoes do usuario para o funcionamento correto, e com isso existem varias como:
+
+Permissões normais:
+Consiste em a intalaçao acessar dados que vão alem do sandbox apresentamdo pouco risco a privacidade.
+
+Permissões da instalação:
+Consiste em a instalaçao obter acesso limitado a dados restritos ou execute açoes restritas, que afetam minimamente os outros aplicativos.
+
+Permissões de assinatura:
+Consiste no sistema do celular dar uma permissao a um aplicativo se ele for pertencente ao mesmo fabricante do aplicativo ou sistema operacional.
+
+Permissões de execução:
+Consiste em a intalação  acessar dados restritos que afetaram o sistema significativamente e outros apps.
+
+Permissões especiais:
+Consiste em uma permissao que so pode ser dada pelo fabricante original do sistema operacional.
+
+PRINCIPAIS PERMISSÕES PADRÕES:
+````
+ACCESS_FINE_LOCATION - Permite que a aplicação mostre o localização exata com base nos provedores de local disponivel.
+````
+````
+CAMERA - Permite que a aplicação tenha acesse a sua camera.
+````
+````
+WRITE_EXTERNAL_STORAGE - Serve para todas as versoes do android, permite acesso de gravação a tudo o que o SDK chama de armazenamento externo 
+````
+````
+MANAGE_EXTERNAL_STORAGE - Somente para android superior ao 11, permite acesso de gravação a quase tudo o que o SDK chama de armazenamento externo, fará com que sua aplicação seja banida de distribuidoras (Play Store ou App Store) ao menos que uma justificativa para esa permissao 
+````
+````
+READ_CONTACTS - Permite que a aplicação tenha acesso aos seus contatos, mostrando por exemplo quem ultiliza o meus aplicativo.
+````
+````
+CALL_PHONE - Permite que a aplicação reconheça um numero de telefone e te direcione para o aplicativo telefone para fazer uma ligação.
+````
+USO EM INTENTS IMPLICITAS PRINCIPAIS: 
+````
+ACTION_VIEW - É uma intent aonde é usada para abrir/exibir dados, geralmente usada para abrir uma url.
+````
+````
+ACTION_SEND - É uma intent usada prar compartilhar dados com outras aplicações, como mandar uma mensagem ou arquivos para outros aplicativos.
+````
+````
+ACTION_PICK - É uma intent usada para ações ou operações específicas num contexto determinado.
+````
+````
+ACTION_CALL - É uma intent que permite te fazer uma ligação do numero colocado na intent.
+````
+````
+ACTION_PLAY - É uma intent que permite a reprodução da midia enviada.
+````
 O QUE SÃO SENSORES?
 
 Sensores são recursos de um dispositivo que detectam tipos de estímulos específicos e retornam um resultado que pode ou não desencadear uma ação a depender do tipo de estímulo e se o programa que solicitou o sensor determinou uma consequência ou apenas a visualização.
@@ -31,36 +85,47 @@ SENSORES DE MOVIMENTO:
 
 ````
 TYPE_ACCELEROMETER baseado em hardware, utiliza o acelerômetro, retornando a força da aceleração nos 3 eixos incluindo a força da gravidade. Comumente utilizado para detectar movimentos de rotação, giro, inclinação e vibração.
-
+````
+````
 TYPE_GYROSCOPE baseado em hardware, utiliza o giroscópio, retornando a taxa de rotação do dispositivo em rad/s(radiano por segundo, divisão entre o deslocamente do dispositivo pelo raio da circunferência da rotação) nos 3 eixos. Muito utilizado na “navegação por gestos” dos dispositivos em ações como rotacionar o dispositivo para abrir a câmera.
-
+````
+````
 TYPE_GRAVITY baseado em software ou hardware, utiliza o giroscópio, retornando a força da gravidade nos 3 eixos, detecta a agitação, inclinação, rotação. Também utilizado na “navegação por gestos”.
-
+````
+````
 TYPE_LINEAR_ACCELERATION baseado em software ou hardware, utiliza o acelerômetro, retornando a força da aceleração em um único eixo excluindo a força da gravidade.
-
+````
+````
 TYPE_ROTATION_VECTOR baseado em software ou hardware, utiliza o giroscópio, retornado a rotação do dispositivo nos 3 eixos em forma de vetor.
 ````
 
 SENSORES AMBIENTAIS:
 ````
 TYPE_AMBIENT_TEMPERATURE baseado em hardware, utiliza o termômetro, retornando a temperatura do ambiente em graus Celsius.
-
+````
+````
 TYPE_LIGHT baseado em hardware, utiliza o fotômetro, retornando o nivel d eluz do ambiente em lx(quantidade de luz por metro quadrado), detecta e controla o brilho da tela, utilizado em recursos como “moto noturno” que diminui o brilho a depender da luz ambiente.
-
+````
+````
 TYPE_PRESSURE baseado em hardware, utiliza o barômetro, retornando a pressão do ar em hPa(hectopascal, pressão atmosférica padrão ao nível médio do mar).
-
+````
+````
 TYPE_RELATIVE_HUMIDITY baseado em hardware, mede a umidade relativa do ar em porcentagem, detecta o ponto de condensação, umidade absoluta e relativa.
-
+````
+````
 TYPE_TEMPERATURE baseado em hardware, utiliza o termômetro, retornando a temperatura da CPU do dispositivo em graus Celsius. Importante ressaltar que esse sensor foi substituído pelo TYPE_AMBIENT_TEMPERATURE no API 14 do Android.
 ````
 SENSORES DE POSIÇÃO:
 ````
 TYPE_MAGNETIC_FIELD baseado em hardware, utiliza o sensor de campo geomagnético para medir o campo geomagnético do ambiente nos 3 eixos e criar uma bussola. Retorna o valor em μT(micro-Tesla), unidade de medida utilizada para densidade de fluxo magnético.
-
+````
+````
 TYPE_ORIENTATION baseado em software, mede os graus de rotação nos 3 eixos e determina a posição do dispositivo. Foi depreciado na versão Android 2.2 e o tipo foi descontinuado no Android 4.4. Atualmente, esse sensor pode ser obtido por meio de uma combinação do sensor TYPE_MAGNETIC_FIELD e TYPE_ACCELEROMETER.
-
+````
+````
 TYPE_PROXIMITY baseado em hardware, utiliza o sensor de campo geomagnético, mede a proximidade da tela do dispositivo em comparação a um campo magnético, objeto. Esse sensor é comumente utilizado para detectar se o smartphone está próximo ao ouvido de uma pessoa durante uma ligação e a deligar a tela.
 ````
+CONCLUSÃO
 CONCLUSÃO
 
 Neste trabalho foi apresentado a importância das permissões para utilização dos sensores compatíveis com Android, mas o principal objetivo foi listar e explicar a finalidade de cada tipo de permissão e sensor, além de exemplificar com usos cotidianos que se tornaram tão comuns que podem passar despercebido.
