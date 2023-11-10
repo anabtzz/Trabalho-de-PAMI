@@ -1,30 +1,38 @@
-# Trabalho de sensores e permissoes 
+<h1 align=center> TRABALHO DE SENSORES E PERMISSOES </h1>
 
-INTRODUÇÃO
+<h1><center>INTRODUÇÃO</center></h1>
 
 As permissões foram criadas para garantir a segurança do usuário e evitar que aplicativos maliciosos tivessem acesso fácil a sensores com potencial de colocar informações pessoais em perigo, a localização, um dos sensores mais utilizados é um ótimo exemplo da razão pelo qual é essencial que existam permissões, já que a facilidade de acesso a uma informação com esse grau de sigilo poderia resultar em diversos problemas.
 Este trabalho, além de ter o objetivo de ressaltar essa importância, também tem a finalidade de apresentar as principais permissões e sensores disponíveis para Android, além dos tipos de retorno para cada sensor e lista das Actions utilizadas para cada permissão.
 
-OQUE É PERMISSOES?
+<h2>OQUE É PERMISSOES?</h2>
 
-Permissoes autorizam a aplicaçao a obter dados e informaçoes do usuario para o funcionamento correto, e com isso existem varias como:
+Permissoes autorizam a aplicaçao a obter dados e informaçoes do usuario para o funcionamento correto.
 
+<h3>CATEGORIAS DAS PERMISSOES:</h3>
+
+1.1
 Permissões normais:
 Consiste em a intalaçao acessar dados que vão alem do sandbox apresentamdo pouco risco a privacidade.
 
+1.2
 Permissões da instalação:
 Consiste em a instalaçao obter acesso limitado a dados restritos ou execute açoes restritas, que afetam minimamente os outros aplicativos.
 
+1.3
 Permissões de assinatura:
 Consiste no sistema do celular dar uma permissao a um aplicativo se ele for pertencente ao mesmo fabricante do aplicativo ou sistema operacional.
 
+1.4
 Permissões de execução:
 Consiste em a intalação  acessar dados restritos que afetaram o sistema significativamente e outros apps.
 
+1.5
 Permissões especiais:
 Consiste em uma permissao que so pode ser dada pelo fabricante original do sistema operacional.
 
-PRINCIPAIS PERMISSÕES PADRÕES:
+<h3>PRINCIPAIS PERMISSÕES PADRÕES:</h3>
+
 ````
 ACCESS_FINE_LOCATION - Permite que a aplicação mostre o localização exata com base nos provedores de local disponivel.
 ````
@@ -43,7 +51,8 @@ READ_CONTACTS - Permite que a aplicação tenha acesso aos seus contatos, mostra
 ````
 CALL_PHONE - Permite que a aplicação reconheça um numero de telefone e te direcione para o aplicativo telefone para fazer uma ligação.
 ````
-USO EM INTENTS IMPLICITAS PRINCIPAIS: 
+<h3> USO EM INTENTS IMPLICITAS PRINCIPAIS: </h3>
+
 ````
 ACTION_VIEW - É uma intent aonde é usada para abrir/exibir dados, geralmente usada para abrir uma url.
 ````
@@ -59,11 +68,11 @@ ACTION_CALL - É uma intent que permite te fazer uma ligação do numero colocad
 ````
 ACTION_PLAY - É uma intent que permite a reprodução da midia enviada.
 ````
-O QUE SÃO SENSORES?
+<h2>O QUE SÃO SENSORES?</h2>
 
 Sensores são recursos de um dispositivo que detectam tipos de estímulos específicos e retornam um resultado que pode ou não desencadear uma ação a depender do tipo de estímulo e se o programa que solicitou o sensor determinou uma consequência ou apenas a visualização.
 
-CATEGORIAS DE SENSORES:
+<h3>CATEGORIAS DE SENSORES:</h3>
 
 Os sensores compatíveis com Android são divididos em 3 categorias principais sendo elas:
 
@@ -81,7 +90,7 @@ Sensores de posição – Esses sensores monitoram a posição física do dispos
 
 Como explicado nos 1.1, o acelerômetro retorna dados tipo float para a força da aceleração e o sensor de campo geomagnético também retorna dados dos 3 eixos, x, y e z, mas em referência a intensidade da proximidade do dispositivo em comparação a um campo magnético, no caso do exemplo das ligações eletrônicas, a pessoa.
 
-SENSORES DE MOVIMENTO:
+<h3>SENSORES DE MOVIMENTO:</h3>
 
 ````
 TYPE_ACCELEROMETER baseado em hardware, utiliza o acelerômetro, retornando a força da aceleração nos 3 eixos incluindo a força da gravidade. Comumente utilizado para detectar movimentos de rotação, giro, inclinação e vibração.
@@ -99,7 +108,8 @@ TYPE_LINEAR_ACCELERATION baseado em software ou hardware, utiliza o acelerômetr
 TYPE_ROTATION_VECTOR baseado em software ou hardware, utiliza o giroscópio, retornado a rotação do dispositivo nos 3 eixos em forma de vetor.
 ````
 
-SENSORES AMBIENTAIS:
+<h3>SENSORES AMBIENTAIS:</h3>
+
 ````
 TYPE_AMBIENT_TEMPERATURE baseado em hardware, utiliza o termômetro, retornando a temperatura do ambiente em graus Celsius.
 ````
@@ -115,7 +125,8 @@ TYPE_RELATIVE_HUMIDITY baseado em hardware, mede a umidade relativa do ar em por
 ````
 TYPE_TEMPERATURE baseado em hardware, utiliza o termômetro, retornando a temperatura da CPU do dispositivo em graus Celsius. Importante ressaltar que esse sensor foi substituído pelo TYPE_AMBIENT_TEMPERATURE no API 14 do Android.
 ````
-SENSORES DE POSIÇÃO:
+<h3>SENSORES DE POSIÇÃO:</h3>
+
 ````
 TYPE_MAGNETIC_FIELD baseado em hardware, utiliza o sensor de campo geomagnético para medir o campo geomagnético do ambiente nos 3 eixos e criar uma bussola. Retorna o valor em μT(micro-Tesla), unidade de medida utilizada para densidade de fluxo magnético.
 ````
@@ -124,9 +135,10 @@ TYPE_ORIENTATION baseado em software, mede os graus de rotação nos 3 eixos e d
 ````
 ````
 TYPE_PROXIMITY baseado em hardware, utiliza o sensor de campo geomagnético, mede a proximidade da tela do dispositivo em comparação a um campo magnético, objeto. Esse sensor é comumente utilizado para detectar se o smartphone está próximo ao ouvido de uma pessoa durante uma ligação e a deligar a tela.
+
 ````
-CONCLUSÃO
-CONCLUSÃO
+
+<H2>CONCLUSÃO</H2>
 
 Neste trabalho foi apresentado a importância das permissões para utilização dos sensores compatíveis com Android, mas o principal objetivo foi listar e explicar a finalidade de cada tipo de permissão e sensor, além de exemplificar com usos cotidianos que se tornaram tão comuns que podem passar despercebido.
 Outra conclusão essencial que pode ser tirada dessa pesquisa foi o quão útil a criação e utilização desses sensores se tornou para os dispositivos, já que atualmente grande parte das ações que passaram do físico para o digital com o proposito de aumentar a eficiência e facilidade dependem desses sensores. Um grande exemplo disso é o aplicativo Google Maps ou qualquer outro programa que utilize o sensor de campo geomagnético, giroscópio e acelerômetro para determinar a localização, direção e movimentação do dispositivo em comparação ao ambiente, assim podendo guiar o usuário a uma rota especifica baseada na replica digital do mapa real dos lugares. Além da popular “Navegação por Gestos” citada diversas vezes como exemplo prático dos sensores ao decorrer do trabalho, mesmo que existam falhas nessa tecnologia ou ela possa não ser tão útil quanto a localização, é interessante observar a variedade de funcionalidades que os sensores podem desempenhar.
@@ -137,3 +149,7 @@ https://developer.android.com/guide/topics/sensors/sensors_overview?hl=pt-br
 https://developer.android.com/training/permissions/requesting?hl=pt-br
 https://developer.android.com/guide/topics/permissions/overview?hl=pt-br
 https://developer.android.com/guide/topics/sensors?hl=pt-br
+https://developers.google.com/maps/documentation/android-sdk/location?hl=pt-br
+https://www.androidpro.com.br/blog/armazenamento-de-dados/armazenar-dados-de-aplicativos-localmente/
+https://stackoverflow.com/questions/73909410/manage-external-storage-vs-write-external-storage
+https://developer.android.com/reference/android/content/Intent
