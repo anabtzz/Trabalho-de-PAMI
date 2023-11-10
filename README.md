@@ -88,7 +88,7 @@ Esses sensores retornam um único valor diferente dos de movimento que retornam 
 1.3
 Sensores de posição – Esses sensores monitoram a posição física do dispositivo, o Android oferece dois sensores para essa categoria sendo eles: sensor de campo geomagnético e o acelerômetro, também utilizado nos de movimento como citado anteriormente. Assim como os sensores ambientais, os de posição são baseados no hardware, a diferença é que a maioria dos fabricantes inclui os 2 sensores já que são usados para finalidades básicas que existem desde o começo da utilização dos smartphones, tablets e dispositivos Android no geral. Um exemplo de utilização comum desse sensor é o desligamento automático da tela ao executar ligações e direcionar o dispositivo ao ouvido ou até mesmo o recurso adiciona recentemente de manter o celular desbloqueado quando estiver no bolso, os dois exemplos para determinar a proximidade do dispositivo utilizam esses sensores.
 
-Como explicado nos 1.1, o acelerômetro retorna dados tipo float para a força da aceleração e o sensor de campo geomagnético também retorna dados dos 3 eixos, x, y e z, mas em referência a intensidade da proximidade do dispositivo em comparação a um campo magnético, no caso do exemplo das ligações eletrônicas, a pessoa.
+Como explicado no 1.1, o acelerômetro retorna dados tipo float para a força da aceleração e o sensor de campo geomagnético também retorna dados dos 3 eixos, x, y e z, mas em referência a intensidade da proximidade do dispositivo em comparação a um campo magnético, no caso do exemplo das ligações eletrônicas, a pessoa.
 
 <h3>SENSORES DE MOVIMENTO:</h3>
 
