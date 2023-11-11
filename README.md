@@ -1,4 +1,5 @@
 <h1 align=center> TRABALHO DE SENSORES E PERMISSOES </h1>
+<h1 align=center> Ana Beatriz Abreu e Giovana Vitoria </h1>
 
 <h1><center>INTRODUÇÃO</center></h1>
 
